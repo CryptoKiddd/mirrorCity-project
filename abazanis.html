@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="category-item-review">
+        <div class="category-item-review-swiper">
+            <div
+            style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+            class="swiper category-swiper-top mySwiper2"
+          >
+            <div class="swiper-wrapper swiper-wrapper-category">
+              <div class="swiper-slide swiper-slide-category">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div thumbsSlider="" class=" category-swiper-bottom swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+              </div>
+              <div class="swiper-slide">
+                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="category-item-text">
+            <h2>აბაზანის სარკეები</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste harum in molestiae!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste harum in molestiae!</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, blanditiis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste harum in molestiae!</p>
+        </div>
+
+
+
+    </div>
+    <div class="calculator">
+        <div class="calculator-wrapper">
+            <h4>აბაზანის სარკის კალკულატორი</h4>
+            <div class="calculator-checkboxes">
+                <h3 class="calc-h3" >აირჩიე ფორმა</h3>
+                <div class="wre">
+                    <input type="checkbox" name="წრე" id="wre">
+                    <span>მრგვალი</span>
+
+                </div>
+                <div class="otxkutxedi">
+                    <input type="checkbox" name="წრე" id="otxkutxedi">
+                    <span>ოთხკუთხედი</span>
+
+                </div>
+               
+               
+                
+              
+            </div>
+            <div class="zomebi">
+                <h3 class="calc-h3" >მიუთითე ზომები</h3>
+
+                <div class="input-box">
+                    <input type="text"  required>
+                    <span>სიგრზე სმ</span>
+                </div>
+               <div class="input-box">
+                <input type="text"  required>
+                <span>სიგანე სმ</span>
+               </div>
+                
+            </div>
+            <div class="price">
+                <button id="submit-price">გაიგე ფასი</button>
+                <p id="price"></p>
+            </div>
+        </div>
+    </div>
+  
+ 
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="index.js"></script>
+
+ 
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+</body>
+</html>

@@ -762,3 +762,148 @@ footer{
     flex-direction: column;
     gap: .7rem;
 }
+
+
+
+
+/* kategoriebis index.htmls style */
+.category-item-review{
+    display: flex;
+    padding: 2rem 3rem;
+    justify-content: space-between;
+}
+.category-item-review-swiper{
+    display: flex;
+    flex-direction: column;
+   
+    align-items: left;
+    gap:20px ;
+    align-self: flex-start;
+    flex: 7;
+}
+.category-item-text{
+    flex: 5;
+    flex-direction: column;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+}
+.category-swiper-top{
+    width: 400px;
+    border-radius: 25px;
+}
+.category-swiper-bottom{
+    max-width: 400px;
+}
+
+
+
+.category-item-pictures{
+    width: 100%;
+    padding: 0 2rem;
+}
+.category-item-card-wrapper{
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+.category-item-card{
+    width: 30%;
+    min-height: 300px;
+    position: relative;
+    background-color: #ceeec8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 2rem;
+}
+.category-item-card-img{
+    max-width: 200px;
+    border-radius: 50px;
+    width: 100%;
+
+}
+.category-item-card-img img{
+    border-radius: 50px;
+}
+.category-item-card-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.resized-item{
+    transform: scale(120%);
+    transition: 1250ms;
+}
+.calculator{
+    padding: 2rem 0;
+}
+.calculator-wrapper{
+    max-width: 600px;
+    width: 100%;
+    padding: 1rem;
+    background-color: #333;
+
+    min-height: 400px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calculator-wrapper h4{
+    background-color: #1d2b3a;
+    padding: 1rem 2rem;
+}
+.calculator-checkboxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   gap: 10px;
+
+    flex-wrap: wrap;
+}
+.calc-h3{
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.zomebi{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.calculator input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255,255,255,0.25);
+    background-color: #1d2b3a;
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+    font-size: .8rem;
+}
+.calculator .zomebi span {
+    position: absolute;
+    left: 0;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1rem;
+    color:rgba(255,255,255,0.25); 
+    transition: 0.5s;
+}
+
