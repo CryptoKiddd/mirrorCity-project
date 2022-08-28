@@ -104,18 +104,60 @@
         <div class="calculator-wrapper">
             <h4>აბაზანის სარკის კალკულატორი</h4>
             <div class="calculator-checkboxes">
+
+
+
+              <div class="checkbox-forms">
                 <h3 class="calc-h3" >აირჩიე ფორმა</h3>
                 <div class="wre">
-                    <input type="checkbox" name="წრე" id="wre">
-                    <span>მრგვალი</span>
+                  <label for="wre">მრგვალი</label>
+                    <input type="radio" name="wre" id="wre">
+                    
 
                 </div>
                 <div class="otxkutxedi">
-                    <input type="checkbox" name="წრე" id="otxkutxedi">
-                    <span>ოთხკუთხედი</span>
+                    <label for="otxkutxedi">მართხუთხედი</label>
+                    <input type="radio" name="wre" id="otxkutxedi">
+                   
 
                 </div>
+                <div class="otxkutxedi">
+                   <label for="otxkutxedi-momrgvalebuli">მართხუთხედი მომრგვალებული <br>კუთხეებით</label>
+
+                    <input type="radio" name="wre" id="otxkutxedi-momrgvalebuli">
+                    
+                </div>
                
+              </div>
+              <div class="checkbox-styles">
+                <h3 class="calc-h3" >აირჩიე სტილი</h3>
+                <div class="wre">
+                  <label for="amonatebit">ამონათებით</label>
+                    <input type="radio" name="style" id="amonatebit">
+                    
+
+                </div>
+                <div class="otxkutxedi">
+                  <label for="gamonatebit">გამონათებით</label>
+                    <input type="radio" name="style" id="gamonatebit">
+                    
+
+                </div>
+                <div class="otxkutxedi">
+                   <label for="faceti">ფაცეტით</label>
+                    <input type="radio" name="style" id="faceti">
+                    
+
+                </div>
+                <div class="otxkutxedi">
+                   <label for="shavi-kanti">შავი კანტით</label>
+                    <input type="radio" name="style" id="shavi-kanti">
+                    
+
+                </div>
+
+              </div>
+             
                
                 
               
@@ -124,14 +166,24 @@
                 <h3 class="calc-h3" >მიუთითე ზომები</h3>
 
                 <div class="input-box">
-                    <input type="text"  required>
+                    <input type="text" name="SS"  required>
                     <span>სიგრზე სმ</span>
                 </div>
                <div class="input-box">
-                <input type="text"  required>
+                <input type="text" name="SS" required>
                 <span>სიგანე სმ</span>
                </div>
+               <div class="input-box active">
+                <input type="text"  name="D" required>
+                <span>დიამეტრი</span>
+               </div>
                 
+            </div>
+            <div class="selected-mirror">
+              <p id="selected-mirror-text">
+                არჩეული სარკე : 
+
+              </p>
             </div>
             <div class="price">
                 <button id="submit-price">გაიგე ფასი</button>

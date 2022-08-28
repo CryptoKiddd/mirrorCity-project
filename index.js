@@ -14,6 +14,17 @@
   });
 
 
+  let forms = [...document.querySelectorAll('input[name=wre]')]
+  console.log(forms)
+  forms.forEach((form)=>{
+    form.addEventListener('click',(e)=>{
+       let userChoise = form.textContent
+       console.log(userChoise)
+      
+
+    })
+  })
+
   
 
 

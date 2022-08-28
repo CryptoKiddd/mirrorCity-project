@@ -849,10 +849,10 @@ footer{
     padding: 2rem 0;
 }
 .calculator-wrapper{
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     padding: 1rem;
-    background-color: #333;
+    background-color: rgb(116, 221, 240);
 
     min-height: 400px;
     margin: 0 auto;
@@ -860,23 +860,37 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 10px
 }
 .calculator-wrapper h4{
-    background-color: #1d2b3a;
+    background-color: #d1e9b6;
+    margin-top: -1rem;
     padding: 1rem 2rem;
+    border-bottom-left-radius:25px ;
+    border-bottom-right-radius:25px ;
+    border: 4px solid white
 }
 .calculator-checkboxes{
     display: flex;
+    width: 100%;
     align-items: center;
-    justify-content: center;
-   gap: 10px;
+    justify-content: space-around
+    ;
+    gap: 30px;
 
-    flex-wrap: wrap;
+}
+.checkbox-forms, .checkbox-styles{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
 }
 .calc-h3{
     width: 100%;
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 
@@ -884,6 +898,9 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.active{
+    display: none;
 }
 
 .calculator input {
@@ -905,5 +922,8 @@ footer{
     font-size: 1rem;
     color:rgba(255,255,255,0.25); 
     transition: 0.5s;
+}
+.selected-mirror{
+
 }
 
