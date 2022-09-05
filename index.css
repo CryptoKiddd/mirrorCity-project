@@ -1294,7 +1294,10 @@ padding: 1rem;
     gap:22px;
     align-items: flex-start;
 
-}
+  }
+  .hero-left{
+    gap: 40px;
+  }
   
 }
 @media screen and (max-width:680px){
@@ -1319,12 +1322,13 @@ padding: 1rem;
         position: static;
     }
     .hero-left{
-        gap: 30px;
+        gap: 40px;
         text-align: center;
        
         
     }
     .hero-left h1{
+        width: 100%;
         font-size: 30px;
     }
     .hero-left span{
