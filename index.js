@@ -125,10 +125,14 @@ submit.addEventListener('click',()=>{
           price = 230 * (height.value/100) * (width.value/100) -1
           }
 
-  text.textContent = `სარკის ფასია ${ Math.floor(price+1)} ლარი`
-  setTimeout(()=>{
-    text.textContent = ''
-  },5000)
+  text.textContent = 
+  `სარკის ფასია ${ Math.floor(price+1)} ლარი, 
+  დეტალური ინფორმაციისთვის დაგვიკავშირდით ნომერზე +995 558 77 56 56
+
+  
+  `
+  
+ 
  
 })
 let nav = document.getElementById('nav');
@@ -139,7 +143,7 @@ document.getElementById('hambureger').addEventListener('click', function(){
   
 });
   if(window.innerWidth < 850){
-    
+
   }
 
 
