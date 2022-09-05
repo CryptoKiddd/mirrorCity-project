@@ -126,11 +126,12 @@ submit.addEventListener('click',()=>{
           }
 
   text.textContent = 
-  `სარკის ფასია ${ Math.floor(price+1)} ლარი, 
-  დეტალური ინფორმაციისთვის დაგვიკავშირდით ნომერზე +995 558 77 56 56
+  `სარკის ფასია ${ Math.floor(price+1)} ლარი 
+  
 
   
   `
+ 
   
  
  
