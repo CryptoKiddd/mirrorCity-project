@@ -131,9 +131,16 @@ submit.addEventListener('click',()=>{
   },5000)
  
 })
-
-
+let nav = document.getElementById('nav');
+document.getElementById('hambureger').addEventListener('click', function(){
+  nav.classList.toggle('active-nav-click')
+ 
   
+  
+});
+  if(window.innerWidth < 850){
+    
+  }
 
 
   
