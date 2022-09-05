@@ -1285,6 +1285,13 @@ padding: 1rem;
    .category-header{
     border-bottom: 2px solid white;
    }
+   .category-item-review{
+    gap: 50px;
+    padding: .5rem;
+}
+.category-item-text{
+    flex: 8;
+}
     
 }
 @media screen and (max-width:768px){
@@ -1292,6 +1299,7 @@ padding: 1rem;
         flex-direction: column-reverse;
         height: 100%;
     }
+   
   .why-us-right{
         width: 100%;
         text-align: center;
@@ -1342,6 +1350,26 @@ padding: 1rem;
     .logo{
         margin-left: 50px;
         font-size: 35px;
+    }
+    .category-item-review{
+       flex-direction: column-reverse;
+       align-items: center;
+       justify-content: center;
+    }
+    .category-item-text{
+        width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+    .category-item-review-swiper{
+        width: 100%;
+        max-height: 500px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .category-item-review-swiper img{
+        object-fit: fill;
     }
 
 }
