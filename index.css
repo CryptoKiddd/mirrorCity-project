@@ -39,6 +39,7 @@ img{
     background-image: url(images/mirror-texture.jpg);
     background-attachment: fixed;
     background-size: cover;
+   
 }
 .main-sec-wrapper{
     display: flex;
@@ -1214,6 +1215,7 @@ padding: 1rem;
         height: 100%;
         border-radius: 25px;
         z-index: 1;
+        box-shadow: none;
         
        
     }.hero-right img{
@@ -1237,8 +1239,9 @@ padding: 1rem;
     .hero-left{
         border-radius: 25%;
         z-index: 7;
-        width: 100%;
+        width: 90%;
         position: absolute;
+        margin: 0 auto;
         bottom: 20px;
         align-items: center;
     }
@@ -1301,6 +1304,40 @@ padding: 1rem;
 @media screen and (max-width:525px){
     .contacts-top{
         transform: scale(0.9);
+    }
+    .main-sec{
+        position: relative;
+        height: 100vh;
+    }
+    .hero-wrapper{
+        position: static;
+    }
+    .hero{
+        position: static;
+    }
+    .hero-left{
+        gap: 30px;
+        text-align: center;
+       
+        
+    }
+    .hero-left h1{
+        font-size: 30px;
+    }
+    .hero-left span{
+        margin-bottom: -10px;
+    }
+    .hero-right img{
+        border-bottom-right-radius: 1%;
+    border-bottom-left-radius: 1%;
+    }
+    .gallery-cta {
+        margin-top:0
+    }
+}
+@media screen and (max-width:425px){
+    .contacts-top{
+        transform: scale(0.7);
     }
 }
 
