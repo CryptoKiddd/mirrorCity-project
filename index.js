@@ -71,16 +71,16 @@ gamonatebit.addEventListener('click',()=>{
   gamonatebitSelected = !gamonatebitSelected
 
 })
-faceti.addEventListener('click',()=>{
+// faceti.addEventListener('click',()=>{
 
-  facetiSelected = !facetiSelected
+//   facetiSelected = !facetiSelected
 
-})
-shaviKanti.addEventListener('click',()=>{
+// })
+// shaviKanti.addEventListener('click',()=>{
 
-  shaviKantiSelected = !shaviKantiSelected
+//   shaviKantiSelected = !shaviKantiSelected
 
-})
+// })
 
 let price = 0
 submit.addEventListener('click',()=>{
