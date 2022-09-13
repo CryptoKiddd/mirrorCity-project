@@ -31,7 +31,7 @@
 
               <div class="logo">
                 <a href="index.html"
-                  ><span class="logo-span">Mirror</span>City</a
+                  ><img src="images/MirrorCitylOGO2.png" ></a
                 >
               </div>
 
@@ -288,18 +288,18 @@
            <div class="calc-row">
             <div class="wre">
                 <label for="wre">მრგვალი</label>
-                <input type="checkbox" name="wre" id="wre" />
+                <input type="radio" name="wre" id="wre" />
               </div>
               <div class="otxkutxedi">
                 <label for="otxkutxedi">მართხუთხედი</label>
-                <input type="checkbox" name="wre" id="otxkutxedi" />
+                <input type="radio" name="wre" id="otxkutxedi" />
               </div>
               <div class="otxkutxedi">
                 <label for="otxkutxedi-momrgvalebuli"
                   >მრგვალი კუთხეებით</label
                 >
   
-                <input type="checkbox" name="wre" id="otxkutxedi-momrgvalebuli" />
+                <input type="radio" name="wre" id="otxkutxedi-momrgvalebuli" />
               </div>
            </div>
           
@@ -309,11 +309,11 @@
             <div class="calc-row">
                 <div class="wre">
                     <label for="amonatebit">ამონათებით</label>
-                    <input type="checkbox" name="style" id="amonatebit" />
+                    <input type="radio" name="style" id="amonatebit" />
                   </div>
                   <div class="otxkutxedi">
                     <label for="gamonatebit">გამონათებით</label>
-                    <input type="checkbox" name="style" id="gamonatebit" />
+                    <input type="radio" name="style" id="gamonatebit" />
                   </div>
                   <!-- <div class="otxkutxedi">
                     <label for="faceti">ფაცეტით</label>
@@ -397,29 +397,30 @@
             <i class="fa-regular fa-earth-americas"></i>
           </div>
         </div>
-        <form onsubmit="sendEmail(); reset(); return false ">
+        <form action="https://formsubmit.co/f867ca4835813052dcdb4798cb78dcc3" method="POST">
           <div class="input-box">
-            <input type="text" id="fname" required />
+            <input type="text" name="name" id="fname" required />
             <span>სახელი</span>
           </div>
           <div class="input-box">
-            <input type="text" id="lname" required />
+            <input type="text" name="surname" id="lname" required />
             <span>გვარი</span>
           </div>
           <div class="input-box">
-            <input type="email" id="email" required />
+            <input type="email" name="email" id="email" required />
             <span>მეილი</span>
           </div>
           <div class="input-box">
-            <input type="tel" id="tel" required />
+            <input type="tel" name="tel" id="tel" required />
             <span>მობილური</span>
           </div>
           <div class="input-box">
-            <textarea id="textarea" required></textarea>
+            <textarea id="textarea" name="text" required></textarea>
             <span>ტექსტი</span>
           </div>
+          <input type="hidden" name="_next" value="https://localhost:5500/thanks.html">
 
-          <button id="form-btn">გაგზავნა</button>
+          <button type="submit" id="form-btn">გაგზავნა</button>
         </form>
       </div>
       <div class="contacts-bottom">
