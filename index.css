@@ -1156,6 +1156,7 @@ padding: 1rem;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    padding-left: 222%;
   
   
     scroll-behavior: smooth;

@@ -97,6 +97,11 @@ submit.addEventListener('click',()=>{
   if(mrgvaliSelected===true && shaviKantiSelected===true){
     price = 2 * diameter.value -1
     }
+    if(mrgvaliSelected===true ){price =2.1 *diameter.value -1}
+    if(martkutxediSelected===true ){price = 200 * (height.value/100) * (width.value/100) -1}
+    if(martkutxediMrgvaliSelected===true ){price =220 * (height.value/100) * (width.value/100) -1}
+
+   
 
 
   if(martkutxediSelected===true && gamonatebitSelected===true){
