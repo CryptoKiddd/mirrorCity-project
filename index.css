@@ -54,7 +54,7 @@ img{
     flex-direction: column;
     align-items: center;
     z-index: 999;
-    background-color:rgb(77, 68, 68);
+    background-color:rgb(77, 65, 65);
     box-shadow: 2px 2px 4px 2px white;
     width: 100%;
     
@@ -146,6 +146,10 @@ img{
    
 
 }
+.fa-brands{
+    font-size: 1.2rem;
+    transition: 250ms ease;
+}
 .fa-brands:hover {
   transform: scale(110%);
 }
@@ -153,10 +157,11 @@ img{
     color: rgb(0, 253, 0);
 }
 .fb{
-    color: rgb(0, 0, 255);
+    color: 	#3a64ee;
+
 }
 .insta{
-    color: #653a9c;
+    color: #9563d6;
 }
 .dropdown{
     position: relative;
@@ -605,8 +610,8 @@ box-shadow:-50px 0px 185px 80px rgba(143, 192, 241, 0.555);
     padding: 1rem;
  
     border-radius:10px;
-    box-shadow: 4px 4px 4px rgba(204, 200, 200, 0.582);
-    -webkit-box-shadow:4px 4px 4px rgba(204, 200, 200, 0.582);
+    box-shadow: 4px 1px 4px 4px rgba(204, 200, 200, 0.582);
+    -webkit-box-shadow:4px 4px 4px 4px rgba(204, 200, 200, 0.582);
 -moz-box-shadow:4px 4px 4px rgba(204, 200, 200, 0.582);
 
 }
@@ -1508,12 +1513,30 @@ padding: 1rem;
     .category-item-review-swiper img{
         object-fit: fill;
     }
+    .form{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 0; 
+    }
+    .contacts-top{
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3rem;
+        margin-bottom: 2rem;
+
+    }
+    form{
+        width:100%;
+        border-top-left-radius: 0%;
+        border-bottom-left-radius: 0%;
+
+    }
 
 }
 @media screen and (max-width:525px){
-    .contacts-top{
-        transform: scale(0.7);
-    }
+    
     .main-sec{
         position: relative;
         height: 100vh;
@@ -1549,9 +1572,7 @@ padding: 1rem;
     .calculator-wrapper h4{
         width: 99%;
     }
-    .contacts-top{
-        transform: scale(0.7);
-    }
+    
 }
 
 
