@@ -194,19 +194,25 @@ img{
 /* ჰედერის დასასრული იწყება ჰიროუ სექცია */
 
 .hero{
-    width: 93%;
+    width: 100%;
+    height: 95vh;
+    position: relative;
 }
 .hero-wrapper{
     display: flex;
+   position: absolute;
+   top: -15px;
     align-items: center;
     width: 100%;
+    height: 100%;
     justify-content: space-between;
-    padding: 0rem 2.5rem;
+    /* padding: 0rem 2.5rem; */
     text-align: center;
    
-    background-color:rgb(93, 100, 100);
-    padding: 1rem;
-    border-radius: 25px;
+    background-color:rgba(51, 51, 51, 0.788);
+    padding: 1.2rem;
+    border-radius: 15px;
+    /* border: 10px solid rgba(255, 255, 255, 0.534); */
 
     
 }
@@ -240,19 +246,19 @@ border-top-right-radius: 15%;
     border-top-left-radius: 15%;
     border-bottom-right-radius: 25%;
     border-bottom-left-radius: 25%;
-box-shadow:-50px 0px 85px 40px rgba(143, 192, 241, 0.555);
--webkit-box-shadow:-50px 0px 85px 40px rgba(143, 192, 241, 0.555);
--moz-box-shadow: -50px 0px 85px 40px rgba(143, 192, 241, 0.555);
+box-shadow:-50px 0px 185px 80px rgba(143, 192, 241, 0.555);
+-webkit-box-shadow:-50px 0px 185px 80px rgba(239, 242, 245, 0.555);
+-moz-box-shadow: -50px 0px 185px 80px rgba(143, 192, 241, 0.555);
 }
 .gallery-cta{
     box-sizing: border-box;
     margin-top: 2rem;
     padding: 0.7rem .9rem;
    background-color:rgb(104, 227, 231);
-   width: 30%;
+   width: 200px;
    font-size: 1.1rem;
    text-align: center;
-   border-radius: 50px;
+   border-radius: 15px;
    color: white;
    text-align: center;
    position: relative;
@@ -261,9 +267,10 @@ box-shadow:-50px 0px 85px 40px rgba(143, 192, 241, 0.555);
 
 }
 .gallery-cta:hover{
-    border: 1px solid rgb(0, 253, 0);
-    background: transparent;
-    color: black;
+    border: 1px solid rgb(104, 227, 231);
+    background: white;
+    color: rgb(39, 36, 36);
+ 
 
 }
 .gallery-cta:hover .fa-arrow-right-long{
@@ -1014,13 +1021,15 @@ position: relative;
     background-color: rgba(0, 0, 0, 0.308);
 }
 .calculator-wrapper h4{
-    background-color: #d1e9b6;
+    background-color: #b6dfe9;
     margin-top: -2rem;
     padding: 1rem 2rem;
     border-bottom-left-radius:25px ;
     border-bottom-right-radius:25px ;
     border: 10px solid rgb(243, 242, 242);;
     z-index: 2;
+    width: 50%;
+    text-align: center;
     font-size: 1.5rem;
     color: white;
     font-weight: 600;
@@ -1457,6 +1466,9 @@ padding: 1rem;
 
 }
 @media screen and (max-width:680px){
+    .calculator-wrapper h4{
+        width: 90%;
+    }
     .logo{
         margin-left: 50px;
         font-size: 35px;
@@ -1519,6 +1531,9 @@ padding: 1rem;
     }
 }
 @media screen and (max-width:425px){
+    .calculator-wrapper h4{
+        width: 99%;
+    }
     .contacts-top{
         transform: scale(0.7);
     }
