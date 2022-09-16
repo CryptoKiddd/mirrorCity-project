@@ -1511,7 +1511,7 @@ padding: 1rem;
 }
 @media screen and (max-width:525px){
     .contacts-top{
-        transform: scale(0.9);
+        transform: scale(0.7);
     }
     .main-sec{
         position: relative;
