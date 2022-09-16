@@ -645,24 +645,25 @@ box-shadow:-50px 0px 185px 80px rgba(143, 192, 241, 0.555);
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     background-image: url(images/bg.jpg);
     background-attachment: fixed;
     background-size: cover;
+    padding-left: 2rem;
 }
 form{
     padding: 3rem 0;
   width: 50%;
-   margin: 0 auto;
+
     display: flex;
-    background-color: #1d2b3a;
+    background-color: #1d2b3a9d;
     flex-direction: column;
     align-items: center;
     gap: 30px;
     justify-content: center;
     min-height: 70vh;
-    border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
+border-top-left-radius: 50%;
     z-index: 2;
   
     
@@ -675,7 +676,9 @@ form{
     align-items: center;
     gap: 1rem;
     color: white;
-    flex: 4;
+    font-size: 1.4rem;
+    font-weight: bold;
+    
     
    
     
@@ -783,7 +786,7 @@ form{
     flex-direction: column;
     gap: .8rem;
   align-items: center;
-  border-bottom: 2px solid red;
+  border-bottom: 4px solid rgb(108, 225, 230);
 
 }
 
@@ -854,13 +857,11 @@ footer h4::before{
     position: absolute;
     height: 2px;
     bottom: -5px;
-    width: 40%;
+    width: 100%;
     transition: 0.5s ease;
     background-color: tomato;
 }
-footer h4:hover::before{
-    width: 70%;
-}
+
 footer ul li a:hover{
     margin-left: 10px;
     color: white;
