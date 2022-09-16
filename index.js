@@ -19,8 +19,7 @@ let martkutxediMrgvali = document.getElementById('otxkutxedi-momrgvalebuli')
 
 let amonatebit = document.getElementById('amonatebit')
 let gamonatebit = document.getElementById('gamonatebit')
-let faceti = document.getElementById('faceti')
-let shaviKanti = document.getElementById('shavi-kanti')
+
   
 let height = document.getElementById('height')
 let width = document.getElementById('width')
@@ -71,19 +70,14 @@ gamonatebit.addEventListener('click',()=>{
   gamonatebitSelected = !gamonatebitSelected
 
 })
-// faceti.addEventListener('click',()=>{
 
-//   facetiSelected = !facetiSelected
-
-// })
-// shaviKanti.addEventListener('click',()=>{
-
-//   shaviKantiSelected = !shaviKantiSelected
-
-// })
 
 let price = 0
 submit.addEventListener('click',()=>{
+
+  if(mrgvaliSelected===true ){price =2.1 *diameter.value -1}
+  if(martkutxediSelected===true ){price = 200 * (height.value/100) * (width.value/100) -1}
+  if(martkutxediMrgvaliSelected===true ){price =220 * (height.value/100) * (width.value/100) -1}
 
   if(mrgvaliSelected===true && amonatebitSelected===true){
     price = 5.1 * diameter.value 
@@ -91,15 +85,8 @@ submit.addEventListener('click',()=>{
   if(mrgvaliSelected===true && gamonatebitSelected===true){
     price = 4.85 * diameter.value 
     }
-  if(mrgvaliSelected===true && facetiSelected===true){
-    price = 1.8 * diameter.value -1
-    }
-  if(mrgvaliSelected===true && shaviKantiSelected===true){
-    price = 2 * diameter.value -1
-    }
-    if(mrgvaliSelected===true ){price =2.1 *diameter.value -1}
-    if(martkutxediSelected===true ){price = 200 * (height.value/100) * (width.value/100) -1}
-    if(martkutxediMrgvaliSelected===true ){price =220 * (height.value/100) * (width.value/100) -1}
+  
+ 
 
    
 
@@ -148,9 +135,7 @@ document.getElementById('hambureger').addEventListener('click', function(){
   
   
 });
-  if(window.innerWidth < 850){
-
-  }
+  
 
 
   

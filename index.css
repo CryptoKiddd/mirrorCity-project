@@ -204,7 +204,7 @@ img{
     padding: 0rem 2.5rem;
     text-align: center;
    
-    background-color: rgb(243, 242, 242);
+    background-color:rgb(93, 100, 100);
     padding: 1rem;
     border-radius: 25px;
 
@@ -223,7 +223,7 @@ img{
 }
 .hero-left h1{
     font-size: 50px;
-    /* color: white; */
+    color: white;
 }
 .hero-right img{
     border-top-right-radius: 15%;
@@ -240,9 +240,9 @@ border-top-right-radius: 15%;
     border-top-left-radius: 15%;
     border-bottom-right-radius: 25%;
     border-bottom-left-radius: 25%;
-box-shadow:-50px 0px 85px 90px rgba(143, 192, 241, 0.555);
--webkit-box-shadow:-50px 0px 85px 90px rgba(143, 192, 241, 0.555);
--moz-box-shadow: -50px 0px 85px 90px rgba(143, 192, 241, 0.555);
+box-shadow:-50px 0px 85px 40px rgba(143, 192, 241, 0.555);
+-webkit-box-shadow:-50px 0px 85px 40px rgba(143, 192, 241, 0.555);
+-moz-box-shadow: -50px 0px 85px 40px rgba(143, 192, 241, 0.555);
 }
 .gallery-cta{
     box-sizing: border-box;
@@ -316,9 +316,10 @@ box-shadow:-50px 0px 85px 90px rgba(143, 192, 241, 0.555);
     content: '';
     position: absolute;
     height: 55%;
-    width: 100%;
+    width: 101%;
     top: 0;
-    background-color: #ade9a8;
+    left:-2px;
+    background-color: rgb(243, 242, 242);
     border-radius: 20px 20px 0 0;
 }
 .card-image{
@@ -327,7 +328,7 @@ box-shadow:-50px 0px 85px 90px rgba(143, 192, 241, 0.555);
     border-radius: 50px;
     padding: 3px;
     padding-bottom: 5px;
-    background-color:  #ade9a8;
+    background-color:rgb(243, 242, 242);
     z-index: 1;
     transition: 750ms ease;
     cursor: pointer;
@@ -1153,10 +1154,12 @@ padding: 1rem;
 }
 .category-page-products-product-wrapper{
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding-left: 222%;
+    flex-wrap: wrap;
+   
   
   
     scroll-behavior: smooth;

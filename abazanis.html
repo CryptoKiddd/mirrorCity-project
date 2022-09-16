@@ -44,7 +44,7 @@
                 </div>
               </li>
 
-              <li><a href="">გალერეა </a></li>
+              <li><a href="galerry.html">გალერეა </a></li>
               <li><a href="index.html#why-us">ჩვენს შესახებ</a></li>
               <li><a href="index.html#calc">ფასის კალკულატორი</a></li>
             </ul>
@@ -175,9 +175,9 @@
     <div class="category-page-products">
 
 
-      <div style="width:100% ;" class="category-page-products-product   swiper mySwiperr ">
+      <div style="width:100% ;" class="category-page-products-product ">
         <h4>მომხმარებლების რჩეული აბაზანის სარკეები</h4>
-        <div class="category-page-products-product-wrapper swiper-wrapper">
+        <div class="category-page-products-product-wrapper">
           <div class="card category-page-card swiper-slide">
             <div class="card-content">
               <div class="card-image category-card-img ">
@@ -193,7 +193,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card ">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/ab2.JPG" alt="" />
@@ -207,7 +207,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card ">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/ab3.JPG" alt="" />
@@ -221,7 +221,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card ">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/ab4.JPG" alt="" />
@@ -235,7 +235,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/ab5.JPG" alt="" />
@@ -249,7 +249,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/ab6.jpeg" alt="" />
@@ -263,7 +263,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/IMG_1381.jpeg" alt="" />
@@ -277,7 +277,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/ab1.JPG" alt="" />
@@ -291,7 +291,7 @@
           </div>
 
 
-          <div class="card category-page-card swiper-slide">
+          <div class="card category-page-card">
             <div class="card-content">
               <div class="card-image category-card-img ">
                 <img src="images/abazanis/ab4.JPG" alt="" />
@@ -310,9 +310,7 @@
       
         </div>
     
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-pagination"></div>
+      
        
        
       </div>
@@ -385,7 +383,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="index.js"></script>
+  >
 
     <script>
       var swiper = new Swiper(".mySwiper", {
@@ -440,7 +438,13 @@
       }
 
 
-
+      let nav = document.getElementById('nav');
+document.getElementById('hambureger').addEventListener('click', function(){
+  nav.classList.toggle('active-nav-click')
+ 
+  
+  
+});
 
     </script>
   </body>
