@@ -6,6 +6,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     color: black;
+    font-family: 'Inconsolata';
 
 }
 ul{
@@ -18,7 +19,7 @@ ul{
 body{
     box-sizing: border-box;
     overflow-x:hidden ;
-    font-family: 'Montserrat';
+ 
     height: 100%;
     /* background-color: #b5e0eb; */
     color: white;
@@ -166,14 +167,14 @@ img{
     color: white;
 }
 .sub-menu {
-    padding: 0.5rem 0;
+    padding: 0.5rem .5em;
     
     position: absolute;
     left: -20px;
     display: none;
     z-index: 999;
     width: 200px;
-    background-color: #41b4b8;
+    background-color: rgba(0, 0, 0, 0.37);
     border-radius: 15px;
 }
 .sub-menu li{
@@ -188,6 +189,13 @@ img{
 .sub-menu li::before{
     width: 0;
     bottom: -5px;
+}
+.sub-menu li a{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    padding: 0.5rem 0.25em;  
+    padding-right: 5em;
 }
 
 
@@ -331,7 +339,7 @@ box-shadow:-50px 0px 185px 80px rgba(143, 192, 241, 0.555);
 }
 .card-image{
     width: 300px;
-    height: 275px;
+    height: 330px;
     border-radius: 50px;
     padding: 3px;
     padding-bottom: 5px;
@@ -526,7 +534,13 @@ box-shadow:-50px 0px 185px 80px rgba(143, 192, 241, 0.555);
 }
 .category-name a span{
     color: white;
+    
  
+}
+.card-name span{
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
 }
 .category-img {
     width: 100%;
@@ -1177,7 +1191,7 @@ padding: 1rem;
     min-height: 400px;
 }
 .category-card-img{
-    width: 275px;
+    width: 325px;
     top: 10px;
     height: 350px;
 }

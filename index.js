@@ -97,12 +97,7 @@ submit.addEventListener('click',()=>{
   if(martkutxediSelected===true && amonatebitSelected===true){
     price = 600 * (height.value/100) * (width.value/100) -1
     }
-  if(martkutxediSelected===true && facetiSelected===true){
-    price = 150 * (height.value/100) * (width.value/100) -1
-    }
-  if(martkutxediSelected===true && shaviKantiSelected===true){
-    price = 220 * (height.value/100) * (width.value/100) -1
-    }
+  
 
  if(martkutxediMrgvaliSelected===true && gamonatebitSelected===true){
       price = 570 * (height.value/100) * (width.value/100) -1
@@ -110,19 +105,20 @@ submit.addEventListener('click',()=>{
   if(martkutxediMrgvaliSelected===true && amonatebitSelected===true){
         price = 620 * (height.value/100) * (width.value/100) -1
         }
-  if(martkutxediMrgvaliSelected===true && facetiSelected===true){
-          price = 210 * (height.value/100) * (width.value/100) -1
-          }
-  if(martkutxediMrgvaliSelected===true && shaviKantiSelected===true){
-          price = 230 * (height.value/100) * (width.value/100) -1
-          }
 
-  text.textContent = 
-  `სარკის ფასია ${ Math.floor(price+1)} ლარი 
+       
+        text.textContent = 
+        `სარკის ფასია ${ Math.floor(price+1)} ლარი`
+if(price<2){text.textContent=`გთხოვთ მიუთითეთ ზომები`}
+if(martkutxediMrgvaliSelected===false &&martkutxediSelected===false && mrgvaliSelected===false){
+  text.textContent="გთხოვთ აირჩიეთ  სარკის ფორმა"
+}
+
+
   
 
   
-  `
+  
  
   
  
